@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Alfred Mutua Ng'ang'a Jr.</title>
+        <link rel="stylesheet" type="text/css" href="css\style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <section class="header" id="header">
+        <center>
+            <a href="index.html">Home</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="aboutme.html">About Me</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="projects.html">Projects</a> &nbsp &nbsp &nbsp &nbsp
+            <a href="#">Contact Me</a> </br> </br> </center>
+        </section>
+        <script type="text/javascript">
+        function display(){
+          var name = document.getElementById('fullname').value;
+          var comments = document.getElementById('comments').value;
+          var form= document.getElementById('contactme_form')
+         document.write('<h3>Thank you for your comment</h3>');
+         document.write('<p>Your Data is send via email</p>');
+         document.write('<h3>Here is your comment</h3>');
+
+         document.write(name + '<br/>');
+         document.write(comments + '<br/>');
+
+
+        }
+
+
+        </script>
+    </head>
+  <body>     <!---->
+
+  <section class="contactme" id="contactmeme">   
+    <p> You can contact me via <a href="alfredmwangangi1996@gmail.com" target="_blank">Email Address</a> </p> <br>
+    <p>Or you also reach me through my number +254718787588</p> </br>
+      </section>
+              <!--THe form starts here-->
+          <form id="contactme_form" action="mailto:alfredmwangangi1996@gmail.com"  method="post" onsubmit="return display()">
+            <fieldset>
+            <section class="edittext_formside" align="left" id="edittext_formside">
+
+            <center>  <legend>Leave a Comment</legend> </center></br>
+            <label for="fullname"> Full Name</label>
+            <input type="text" id="fullname" value="" required> </br> </br>
+
+            <label>Gender</label> <br/>
+        			<input type="radio" name="gender" value="Male" size="25">Male &nbsp
+        			<input type="radio" name="gender" value="Female" size="25">Female &nbsp
+        			<input type="radio" name="gender" value="Others" size="25">Others &nbsp </br></br>
+
+            <label for="email"> Email</label>
+            <input type="email" name="email" value="" required> </br></br>
+
+            <label for="address"> Address</label>
+            <input type="text" name="addres" value="" required> </br></br>
+
+            <label for="city">City</label>
+            <input type="text" name="city" value="" required>  </br></br>
+
+            <label for="county">County</label>
+            <select class="county" name="county" required> </br>
+              <option value="Nairobi">Nairobi</option>
+              <option value="Mombasa">Mombasa</option>
+              <option value="Kisumu">Kisumu</option>
+              <option value="Machakos">Machakos</option>
+              <option value="Makueni">Makueni</option>
+              <option value="Kitui">Kitui</option>
+              <option value="Kiambu">Kiambu</option>
+              <option value="Muranga">Muranga</option>
+              <option value="Kirinyaga">Kirinyaga</option>
+              <option value="Nyeri">Nyeri</option>
+              <option value="Nyandarua">Nyandarua</option>
+              <option value="Laikipia">Laikipia</option>
+              <option value="Nakuru">Nakuru</option>
+              <option value="Kericho">Kericho</option>
+              <option value="Nandi Hills">Nandi Hills</option>
+              <option value="Barigo">Barigo</option>
+              <option value="Uasin Gishu">Uasin Gishu</option>
+              <option value="Trans Nzoia">Trans Nzoia</option>
+              <option value="Siaya">Siaya</option>
+              <option value="Bungoma">Bungoma</option>
+              <option value="Kakamega">Kakamega</option>
+              <option value="Vihiga">Vihiga</option>
+              <option value="Kwale">Kwale</option>
+              <option value="Kilifi">Kilifi</option>
+              <option value="Siaya">Siaya</option>
+              <option value="Turkana">Turkana</option>
+              <option value="Mandela">Mandela</option>
+              <option value="Garrissa">Garrissa</option>
+              <option value="Wajir">Wajir</option>
+              <option value="River Tana">River Tana</option>
+            </select> </br> </br>
+
+            <label for="comment">Comment</label> </br></br>
+            <textarea id="comment" rows="8" cols="50" placeholder="Comment here" id="comments" required></textarea> </br></br>
+            <input type="submit" id="submit" value="Submit" onsubmit="return display()" onclick="return display()">
+
+            <!--   <button type="submit" id="submit" onclick="display()" onsubmit="display()">Submit</button> </br></br>-->
+
+             <label for="t" name="display_comments" size="">
+              <input type="text" id="total" value="" readonly></label>
+
+        </section>
+      </fieldset>
+    </form>
+
+            <!--Footer Div-->
+              <section class="footer" id="footer">
+                <center>
+                <img src="images\gmail.png" alt="Gmail" onclick=""> &nbsp &nbsp
+                <img src="images\facebook.png" alt="Facebook" onclick=""> &nbsp &nbsp
+                <img src="images\twitter.png" alt="Twitter" onclick=""> &nbsp &nbsp
+                <img src="images\youtube.png" alt="Youtube" onclick=""> &nbsp &nbsp
+                <img src="" alt="Linkedin" onclick=""> &nbsp &nbsp
+                <img src="" alt="Github" onclick="">&nbsp &nbsp </center>
+
+              </section>
+
+  </body>
+</html>
