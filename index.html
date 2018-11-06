@@ -8,23 +8,44 @@
       <link rel="stylesheet" type="text/css" href="css\style.css">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-      <section class="nav flex-column" id="header">
+      <section class="topnav" id="header">
 
         <nav class="nav flex-column">
           <ul class="nav flex-column"> <center>
               <a href="#">Home</a> &nbsp &nbsp &nbsp &nbsp
               <a href="aboutme.html">About Me</a> &nbsp &nbsp &nbsp &nbsp</>
               <a href="projects.html">Projects</a> &nbsp &nbsp &nbsp &nbsp</>
-              <a href="contactme.html">Contact Me</a> </br> </br>  </center></>
+              <a href="contactme.html">Contact Me</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i> </br> </br>  </center></>
 
           </ul>
         </nav>
 
 
     </section>
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+           } else {
+        x.className = "topnav"; }
+        }
+    function miFunction() {
+      var y = document.getElementById("myNavbar");
+      if (y.className === "navbar") {
+        y.className += " responsive";
+        } else {
+          y.className = "navbar";
+        }
+}
+
+    </script>
 
   </head> </br>
   <body>
@@ -170,14 +191,15 @@
   </section>
 
 
-  <section class="footer" id="footer">
+  <section class="navbar" id="footer">
     <center>
     <a href="#"> <img src="images\gmail.png" alt="Gmail" onclick=""></a>
     <a href="#"> <img src="images\facebook.png" alt="Facebook" onclick=""></a>
     <a href="#"> <img src="images\twitter.png" alt="Twitter" onclick=""></a>
     <a href="#"> <img src="images\youtube.png" alt="Youtube" onclick=""></a>
     <a href="#"> <img src="" alt="Linkedin" onclick=""></a>
-    <a href="#"> <img src="" alt="Github" onclick=""> </center></a>
+    <a href="#"> <img src="" alt="Github" onclick="">
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></center></a>
   </section>
   </body>
 </html>
